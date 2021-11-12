@@ -1,0 +1,23 @@
+name: 'Slack Notify'
+description: 'Notify the test result from junitxml file to any slack channel'
+inputs:
+  slackbotid:
+    description: 'ID of Slack bot configured'
+    required: true
+  slackbottoken:
+    description: 'Token of Slack bot configured'
+    required: true
+  slackchannel:
+    description: 'Channel name to post the message'
+    required: true
+  junitxml_filepath:
+    description: 'Filepath of junitxml file from the root directory'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.slackbotid }}
+    - ${{ inputs.slackbottoken }}
+    - ${{ inputs.slackchannel }}
+    - ${{ inputs.junitxml_filepath }}

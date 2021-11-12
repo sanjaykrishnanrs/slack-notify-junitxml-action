@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="28.398"
+               timestamp="2021-11-12T12:33:40.477581" hostname="LC02WM2CTHTD6">
+        <testcase classname="planviewid.tests.corepvid.pvidadmin.test_pvid_admin_organization"
+                  name="test_pvid_admin_add_organization"
+                  file="planviewid/tests/corepvid/pvidadmin/test_pvid_admin_organization.py"
+                  line="52" time="26.825"/>
+    </testsuite>
+</testsuites>
