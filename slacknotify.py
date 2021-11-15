@@ -2,13 +2,11 @@ import sys
 from junitparser import JUnitXml
 from slackclient import SlackClient
 
-print ("Arguments:", sys.argv)
+print ("Arguments:", sys.argv[1])
 slackbot_id = sys.argv[1]
 slackbot_token = sys.argv[2]
 slackbot_channel = sys.argv[3]
 junitxml_filepath = sys.argv[4]
-
-print (slackbot_id, slackbot_token, slackbot_channel)
 
 print("Opening junit xml file")
 xml = JUnitXml.fromfile(f'/github/workspace/{junitxml_filepath}')
