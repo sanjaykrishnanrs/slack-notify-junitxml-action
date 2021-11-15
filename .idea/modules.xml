@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../WeatherBot/.idea/WeatherBot.iml" filepath="$PROJECT_DIR$/../WeatherBot/.idea/WeatherBot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/slack-notify-junitxml-action.iml" filepath="$PROJECT_DIR$/.idea/slack-notify-junitxml-action.iml" />
     </modules>
   </component>

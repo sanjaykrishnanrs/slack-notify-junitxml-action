@@ -1,4 +1,4 @@
-name: 'Slack Notify'
+name: 'Notify Slack Test Result'
 description: 'Notify the test result from junitxml file to any slack channel'
 inputs:
   slackbotid:

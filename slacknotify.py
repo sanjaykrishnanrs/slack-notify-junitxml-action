@@ -2,6 +2,7 @@ import sys
 from junitparser import JUnitXml
 from slackclient import SlackClient
 
+print ("Arguments:", sys.argv)
 slackbot_id = sys.argv[1]
 slackbot_token = sys.argv[2]
 slackbot_channel = sys.argv[3]
