@@ -7,4 +7,4 @@ RUN pip install junitparser
 COPY slacknotify.py /slacknotify.py
 
 # Code file to execute when the docker container starts up
-ENTRYPOINT ["python", "slacknotify.py", $1, $2, $3, $4]
+CMD ["python", "slacknotify.py", $1, $2, $3, $4]
