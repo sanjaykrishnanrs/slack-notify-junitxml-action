@@ -1,5 +1,8 @@
 name: 'CI Test Result in Slack'
 description: 'Notify the test result from junitxml file to any slack channel'
+branding:
+  icon: 'bell'
+  color: 'gray-dark'
 inputs:
   title:
     description: 'Title of the test result which will appear in slack message'
