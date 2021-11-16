@@ -1,6 +1,9 @@
 name: 'Notify Slack Test Result'
 description: 'Notify the test result from junitxml file to any slack channel'
 inputs:
+  title:
+    description: 'Title of the test result which will appear in slack message'
+    required: true
   slackbotid:
     description: 'ID of Slack bot configured'
     required: true
@@ -17,6 +20,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.title }}
     - ${{ inputs.slackbotid }}
     - ${{ inputs.slackbottoken }}
     - ${{ inputs.slackchannel }}
