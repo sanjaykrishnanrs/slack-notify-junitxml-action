@@ -1,4 +1,4 @@
-name: 'Notify Slack Test Result'
+name: 'CI Test Result in Slack'
 description: 'Notify the test result from junitxml file to any slack channel'
 inputs:
   title:
