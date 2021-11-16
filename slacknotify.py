@@ -21,7 +21,8 @@ print(xml)
 text_msg = "Text Message"
 slack_msg = "Attachementsssssss Message"
 slack = SlackClient(slackbot_token)
-slack.api_call("chat.postMessage", channel=slackbot_channel, text=text_msg,
+response = slack.api_call("chat.postMessage", channel=slackbot_channel, text=text_msg,
                            attachments='[{"title": "Try these - ","text": " Text "}]',
                            username=slackbot_id, icon_emoji=':robot_face:',
                            mrkdwn='true')
+print(response)
