@@ -10,7 +10,7 @@ So, a junitxml report with a slackbot can use this github action to post crisp &
 Test result status follows jenkins convention
 * **Passed** &emsp;&emsp; All tests have passed
 * **Unstable** &emsp;&nbsp;&nbsp;Few tests have not passed
-* **Failure** &emsp;&emsp;&nbsp;&nbsp;No tests have passes
+* **Failure** &emsp;&emsp;&nbsp;&nbsp;No tests have passed
   
 ## Slack Message examples
 ![Slack message](images/slack-message-examples.png)
