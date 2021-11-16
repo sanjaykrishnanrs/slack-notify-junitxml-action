@@ -4,7 +4,6 @@ inputs:
   slackbotid:
     description: 'ID of Slack bot configured'
     required: true
-    default: autobots
   slackbottoken:
     description: 'Token of Slack bot configured'
     required: true
