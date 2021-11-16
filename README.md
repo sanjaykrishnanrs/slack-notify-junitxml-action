@@ -3,8 +3,8 @@ Github actions to notify the test result from junitxml file to any slack channel
 
 ## What does this github action do ?
 Be it any type of tests - unit/integration/api in any language - java/python, you can generate **[JUNITXML](https://llg.cubic.org/docs/junit/)** easily as all languages provid this out of box. <br>
-For example you are using pytest (python), then you can generate junitxml report like this: <br>
-  pytest < test > --junitxml=< reportname >
+For example if you are using pytest (python), then you can generate junitxml report like this: <br>
+```pytest <test> --junitxml=<reportname>```
   
 ## Slack Message examples
 ![Slack message](images/slack-message-examples.png)
