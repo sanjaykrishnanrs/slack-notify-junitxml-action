@@ -11,6 +11,8 @@ junitxml_filepath = sys.argv[4]
 print("Opening junit xml file")
 xml = JUnitXml.fromfile(f'/github/workspace/{junitxml_filepath}')
 print(xml)
+print(slackbot_id)
+print(slackboot_channel)
 #
 # for suite in xml:
 #     # handle suites
