@@ -5,6 +5,12 @@ Github actions to notify the test result from junitxml file to any slack channel
 Be it any type of tests - unit/integration/api in any language - java/python, you can generate **[JUNITXML](https://llg.cubic.org/docs/junit/)** easily as all languages provide this out of box. <br>
 For example if you are using pytest (python), then you can generate junitxml report like this: <br>
 ```pytest <test> --junitxml=<reportname>```
+
+So, a junitxml report with a slackbot can use this github action to post crisp & clear message conveying the test result.
+Test result status follows jenkins convention
+* **Passed** &emsp;&emsp; All tests have passed
+* **Unstable** &emsp;&nbsp;&nbsp;Few tests have not passed
+* **Failure** &emsp;&emsp;&nbsp;&nbsp;No tests have passes
   
 ## Slack Message examples
 ![Slack message](images/slack-message-examples.png)
