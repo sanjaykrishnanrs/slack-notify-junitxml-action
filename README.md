@@ -1,6 +1,8 @@
 # slack-notify-junitxml-action
 Github actions to notify the test result from junitxml file to any slack channel
 
+There is a demo in youtube of this plugin: - https://youtu.be/KhZ1TdRjTy0
+
 ## What does this github action do ?
 Be it any type of tests - unit/integration/api in any language - java/python, you can generate **[JUNITXML](https://llg.cubic.org/docs/junit/)** easily as all languages provide this out of box. <br>
 For example if you are using pytest (python), then you can generate junitxml report like this: <br>
@@ -17,6 +19,7 @@ Test result status follows jenkins convention
 
   
 ## Usage
+
 
 ```
 name: Notify in Slack Channels
