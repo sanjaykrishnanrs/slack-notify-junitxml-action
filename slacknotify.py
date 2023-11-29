@@ -49,7 +49,7 @@ slackbot_channel = sys.argv[4]
 junitxml_filepath = sys.argv[5]
 
 print("Opening junit xml file")
-xml = JUnitXml.fromfile(f'/github/workspace/{junitxml_filepath}')
+xml = JUnitXml.fromfile(f'{junitxml_filepath}')
 attach, text_msg = get_slack_message(xml)
 slack = SlackClient(slackbot_token)
 response = slack.api_call("chat.postMessage", channel=slackbot_channel, text=text_msg,
